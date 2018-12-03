@@ -32,7 +32,7 @@ class ListaDrinks : AppCompatActivity(), ListaContract.View {
 
     override fun showList(drinks: List<Drink>) {
 
-        val adapter = DrinkAdapter(this, list)
+        val adapter = DrinkAdapter(this, drinks)
         adapter.setOnClickListener { position ->
             //TODO
         }
