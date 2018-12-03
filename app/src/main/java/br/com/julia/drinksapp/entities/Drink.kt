@@ -1,4 +1,5 @@
 package br.com.julia.drinksapp.entities
 
-class Drink {
-}
+data class Drink (val name: String,
+                  val id: String,
+                  val imageUrl: String)
