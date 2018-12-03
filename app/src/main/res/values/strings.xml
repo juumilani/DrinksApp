@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">DrinksApp</string>
+    <string name="main_pergunta">O que você quer beber hoje?</string>
+    <string name="categorias">Categorias</string>
+    <string name="surpresa">Me surpreenda!</string>
+    <string name="preferencia">Qual sua preferência hoje?</string>
+    <string name="voltar">Voltar</string>
+    <string name="ingrediente">Ingrediente</string>
+    <string name="gin">gin</string>
+    <string name="vodka">vodka</string>
+    <string name="alcool">Alcool</string>
+    <string name="tipo_drink">Tipo de Drink</string>
+    <string name="alcoolico">Alcoolico</string>
+    <string name="nao_alcoolico">Não-Alcoolico</string>
+    <string name="teor">Teor do Drink</string>
+    <string name="coquetel">Coquetel</string>
+    <string name="normal">Normal</string>
 </resources>

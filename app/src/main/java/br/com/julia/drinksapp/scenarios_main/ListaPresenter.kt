@@ -12,7 +12,7 @@ class ListaPresenter(val view : ListaContract.View) : ListaContract.Presenter {
 
         val drinksService = RetrofitInitializer().createDrinksService()
 
-        val call = drinksService.getDrinkByCategory()
+        val call = drinksService.getDrinkOrdinary()
 
         call.enqueue(object : Callback<DrinkList> {
             override fun onFailure(call: Call<DrinkList>, t: Throwable) {
