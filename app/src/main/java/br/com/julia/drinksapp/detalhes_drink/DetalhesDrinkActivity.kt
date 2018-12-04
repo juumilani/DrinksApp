@@ -5,6 +5,8 @@ import android.os.Bundle
 import br.com.julia.drinksapp.R
 import android.content.Intent
 import br.com.julia.drinksapp.entities.Drink
+import br.com.julia.drinksapp.lista_drinks.ListaContract
+import br.com.julia.drinksapp.lista_drinks.ListaPresenter
 import br.com.julia.drinksapp.utils.GlideApp
 import kotlinx.android.synthetic.main.activity_detalhes_drink.*
 

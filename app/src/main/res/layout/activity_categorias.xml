@@ -59,7 +59,7 @@
             android:orientation="horizontal">
 
         <Button
-
+            android:id="@+id/btnGin"
             android:layout_height="wrap_content"
             android:layout_width="150dp"
             android:text="@string/gin"
@@ -67,6 +67,7 @@
             android:layout_marginLeft="30dp"/>
 
         <Button
+                android:id="@+id/btnVodka"
                 android:layout_height="wrap_content"
                 android:layout_width="150dp"
                 android:text="@string/vodka"
@@ -91,7 +92,7 @@
             android:orientation="horizontal">
 
         <Button
-
+                android:id="@+id/btnCocktail"
                 android:layout_height="wrap_content"
                 android:layout_width="150dp"
                 android:text="@string/coquetel"
@@ -99,6 +100,7 @@
                 android:layout_marginLeft="30dp"/>
 
         <Button
+                android:id="@+id/btnOrdinary"
                 android:layout_height="wrap_content"
                 android:layout_width="150dp"
                 android:text="@string/normal"
@@ -124,7 +126,7 @@
             android:orientation="horizontal">
 
         <Button
-
+                android:id="@+id/btnAlcoholic"
                 android:layout_height="wrap_content"
                 android:layout_width="170dp"
                 android:text="@string/alcoolico"
@@ -132,6 +134,7 @@
                 android:layout_marginLeft="10dp"/>
 
         <Button
+                android:id="@+id/btnNonAlcoholic"
                 android:layout_height="wrap_content"
                 android:layout_width="170dp"
                 android:text="@string/nao_alcoolico"

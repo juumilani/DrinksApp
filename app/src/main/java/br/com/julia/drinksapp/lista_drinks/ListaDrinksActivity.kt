@@ -10,6 +10,8 @@ import br.com.julia.drinksapp.R
 import br.com.julia.drinksapp.detalhes_drink.DetalhesDrinkActivity
 import br.com.julia.drinksapp.entities.Drink
 import br.com.julia.drinksapp.entities.DrinkAdapter
+import br.com.julia.drinksapp.entities.DrinkList
+import br.com.julia.drinksapp.scenarios_main.MainActivity
 import kotlinx.android.synthetic.main.activity_lista_drinks.*
 
 class ListaDrinksActivity : AppCompatActivity(), ListaContract.View {
@@ -18,8 +20,11 @@ class ListaDrinksActivity : AppCompatActivity(), ListaContract.View {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lista_drinks)
 
-        val presenter : ListaContract.Presenter = ListaPresenter(this)
-        presenter.onLoadList()
+        val recebeIntent = getIntent()
+        val drink = recebeIntent.getIntExtra("drink", -1)
+
+        val presenter : ListaContract.Presenter = ListaPresenter(this, MainActivity())
+        presenter.onLoadList(drink)
 
     }
 
@@ -42,6 +47,7 @@ class ListaDrinksActivity : AppCompatActivity(), ListaContract.View {
 
         rvDrinks.addItemDecoration(DividerItemDecoration(this, LinearLayoutManager.VERTICAL))
     }
+
 
     override fun showMessage(msg: String) {
         Toast.makeText(this, msg, Toast.LENGTH_LONG).show()

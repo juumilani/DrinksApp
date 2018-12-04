@@ -14,6 +14,8 @@ interface ListaContract {
 
     interface Presenter {
 
-        fun onLoadList()        //Load random
+        fun onLoadList(drink: Int)
+
+        //fun onLoadRandom()
     }
 }
