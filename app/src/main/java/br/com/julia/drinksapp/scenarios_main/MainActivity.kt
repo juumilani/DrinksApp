@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import br.com.julia.drinksapp.R
+import br.com.julia.drinksapp.detalhes_drink.DetalhesDrinkActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,8 +14,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnCategorias.setOnClickListener(){
-            val exibirCategorias = Intent(this, Categorias::class.java)
+            val exibirCategorias = Intent(this, CategoriasActivity::class.java)
             startActivity(exibirCategorias)
+        }
+
+        btnSurpresa.setOnClickListener(){
+            val exibeRandom = Intent(this, DetalhesDrinkActivity::class.java)
+            startActivity(exibeRandom)
         }
     }
 

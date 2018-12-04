@@ -1,4 +1,4 @@
-package br.com.julia.drinksapp.scenarios_main
+package br.com.julia.drinksapp.lista_drinks
 
 import br.com.julia.drinksapp.entities.Drink
 
@@ -14,6 +14,6 @@ interface ListaContract {
 
     interface Presenter {
 
-        fun onLoadList()
+        fun onLoadList()        //Load random
     }
 }

@@ -6,7 +6,7 @@ import android.os.Bundle
 import br.com.julia.drinksapp.R
 import kotlinx.android.synthetic.main.activity_categorias.*
 
-class Categorias : AppCompatActivity() {
+class CategoriasActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

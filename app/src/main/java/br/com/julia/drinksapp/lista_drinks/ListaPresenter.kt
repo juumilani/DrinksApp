@@ -1,6 +1,7 @@
-package br.com.julia.drinksapp.scenarios_main
+package br.com.julia.drinksapp.lista_drinks
 
 import br.com.julia.drinksapp.entities.DrinkList
+import br.com.julia.drinksapp.lista_drinks.ListaContract
 import br.com.julia.drinksapp.network.RetrofitInitializer
 import retrofit2.Call
 import retrofit2.Callback
@@ -12,7 +13,7 @@ class ListaPresenter(val view : ListaContract.View) : ListaContract.Presenter {
 
         val drinksService = RetrofitInitializer().createDrinksService()
 
-        val call = drinksService.getDrinkOrdinary()
+        val call = drinksService.getRandomDrink()
 
         call.enqueue(object : Callback<DrinkList> {
             override fun onFailure(call: Call<DrinkList>, t: Throwable) {

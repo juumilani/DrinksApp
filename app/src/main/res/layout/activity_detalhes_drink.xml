@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".detalhes_drink.DetalhesDrinkActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+    <requestFocus />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+            <ImageView
+                    android:id="@+id/imgFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/grey"
+                    android:contentDescription="infoImg" />
+
+        </FrameLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+                android:id="@+id/nomeDrink"
+                android:textAppearance="@android:style/TextAppearance"
+                android:typeface="monospace"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/red"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:text="Ingredientes"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="16dp"/>
+
+            <TextView
+                    android:text="Medidas"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:layout_marginRight="16dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal" >
+
+            <TextView
+                    android:id="@+id/test"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="16dp"/>
+
+            <TextView
+                    android:id="@+id/test2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp"
+                    android:layout_marginRight="16dp"/>
+        </LinearLayout>
+
+        <TextView
+                android:text="Instruçoes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_marginRight="16dp"/>
+
+        <TextView
+                android:id="@+id/infoIntrucoes"
+                android:text="Instruções"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:layout_marginTop="7dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:textColor="@color/grey"
+                android:textSize="14sp"
+                android:layout_marginRight="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
