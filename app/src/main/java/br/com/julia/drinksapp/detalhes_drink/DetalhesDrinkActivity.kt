@@ -44,20 +44,21 @@ class DetalhesDrinkActivity : AppCompatActivity() {
             val ingredientsIterator = ingredientes.iterator()
             val stringIngredient = java.lang.StringBuilder()
 
+            val quantityIterator = medidas.listIterator()
+            val stringQuantity = StringBuilder()
+
             for(item in ingredientsIterator){
                 if(!item.isNullOrBlank()){
                     stringIngredient.append(item).append('\n').append('\n')
                 }
             }
 
-            val quantityIterator = medidas.listIterator()
-            val stringQuantity = StringBuilder()
-
             for(item in quantityIterator){
                 if(!item.isNullOrBlank()){
                     stringQuantity.append(item).append('\n').append('\n')
                 }
             }
+
 
             test.text = stringIngredient
             test2.text = stringQuantity

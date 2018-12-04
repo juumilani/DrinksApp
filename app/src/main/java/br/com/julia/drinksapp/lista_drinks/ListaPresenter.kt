@@ -12,7 +12,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class ListaPresenter(val view: ListaDrinksActivity, val view2: MainActivity) : ListaContract.Presenter {
+class ListaPresenter(val view: ListaDrinksActivity) : ListaContract.Presenter {
 
     override fun onLoadList(drink: Int) {
 

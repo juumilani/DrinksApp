@@ -23,7 +23,7 @@ class ListaDrinksActivity : AppCompatActivity(), ListaContract.View {
         val recebeIntent = getIntent()
         val drink = recebeIntent.getIntExtra("drink", -1)
 
-        val presenter : ListaContract.Presenter = ListaPresenter(this, MainActivity())
+        val presenter : ListaContract.Presenter = ListaPresenter(this)
         presenter.onLoadList(drink)
 
     }

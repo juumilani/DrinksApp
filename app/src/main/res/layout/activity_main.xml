@@ -14,6 +14,8 @@
             android:layout_height="wrap_content"
             android:text="@string/main_pergunta"
             android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-condensed"
             android:textSize="32sp"
             android:textAlignment="center"
             android:layout_marginTop="30dp"/>
@@ -22,26 +24,18 @@
             android:layout_width="200dp"
             android:layout_height="175dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/champagne_glass"/>
+            android:layout_marginTop="30dp"
+            android:src="@drawable/cocktail"/>
 
 
     <Button
             android:id="@+id/btnCategorias"
-            android:layout_height="wrap_content"
-            android:layout_width="300dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="24dp"
-            android:text="@string/categorias"
-            android:textSize="25sp"/>
+            style="@style/MainButton"
+            android:text="@string/categorias"/>
 
     <Button
             android:id="@+id/btnSurpresa"
-            android:layout_height="wrap_content"
-            android:layout_width="300dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="24dp"
-            android:text="@string/surpresa"
-            android:textSize="25sp"/>
+            style="@style/MainButton"
+            android:text="@string/surpresa"/>
 
 </LinearLayout>
